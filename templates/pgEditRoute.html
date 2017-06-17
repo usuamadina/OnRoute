@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>EditRoute</title>
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g" crossorigin="anonymous"></script>
+    <script src="../js/lib/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div id="pgEditarRuta" data-role="page">
+        <div data-role="header" data-add-back-btn="true" data-back-btntext="Atr&aacute;s">
+            <h1>Editar Ruta</h1></div>
+        <div class="ui-content">
+            <input id="txtEditarTitulo" type="text">
+            <input id="txtEditarFecha" type="text" disabled>
+            <input id="txtEditarColor" type="color">
+            <label for="txtEditarVisualizar">Visualizar:</label>
+            <select id="txtEditarVisualizar" data-role="flipswitch">
+                <option value="off">Off</option>
+                <option value="on">On</option>
+            </select>
+            <input id="btBorrar" type="button" value="Borrar">
+        </div>
+    </div>
+</body>
+
+</html>
