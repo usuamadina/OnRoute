@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script>
+    <script src="../js/lib/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div id="pgHome" data-role="page">
+        <div data-role="header">
+            <h1>Mis rutas</h1></div>
+        <div class="ui-content"></div>
+        <input id="txtTitulo" type="text" placeholder="T&iacute;tulo">
+        <input id="btGrabar" type="button" value="Empezar Ruta">
+        <div id="pnInfo">
+            <p id="lblInfo"> Grabando ruta XXX</p>
+            <p id="lblReloj"> 00:00:00 </p>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#pgHome" class="ui-btn-active ui-state-persist" data-icon="home">Principal</a></li>
+                    <li><a href="#pgMisRutas" data-icon="search">Mis rutas</a></li>
+                    <li><a href="#pgMapa" data-icon="navigation">Mapa</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
