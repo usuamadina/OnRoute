@@ -5,10 +5,11 @@ var EditRoute = Backbone.View.extend({
         this.$('#txtEditarFecha').val(this.model.get('date')).textinput('refresh');
         this.$('#txtEditarColor').val(this.model.get('color')).textinput('refresh');
         this.$('#txtEditarVisualizar').val(this.model.get('visible')).flipswitch('refresh');
-    }
+    },
+    
 
 
-        events: {
+    events: {
         'change #txtEditarTitulo': function() {
             this.model.set('title', this.$('#txtEditarTitulo').val());
         },
@@ -22,6 +23,6 @@ var EditRoute = Backbone.View.extend({
             this.collection.remove(this.model);
             $(':mobile-pagecontainer').pagecontainer('change', '#pgMisRutas');
         }
-    }
+    },
 
-})
+});
