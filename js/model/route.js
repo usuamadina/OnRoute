@@ -7,7 +7,7 @@ var Route = Backbone.Model.extend({
         if (!this.has("date")) this.set('date', Date());
     },
     defaults: {
-        titulo: 'Undefined',
+        title: 'Undefined',
         visible: 'on',
         color: '#000000',
     },
